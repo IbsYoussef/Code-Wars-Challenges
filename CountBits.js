@@ -22,14 +22,17 @@ console.log(decimalToBinary(14))
 
 // My solution
 var countBits = function(n) {
-    let x = (n).toString(2)
-    let nw = x.split('')
+    let x = (n).toString(2).split('')
     let final = 0
 
-    for (let i = 0; i < nw.length; i++){
-        final += Number(nw[i])
+    for (let i = 0; i < x.length; i++){
+        final += Number(x[i])
     }
+
+    console.log(x)
+
     return final
+
   };
 
   console.log(countBits(1234))
