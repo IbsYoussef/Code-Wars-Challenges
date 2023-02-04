@@ -1,3 +1,5 @@
+// 6Kyu
+
 // Teamates Solution
 var countBits = function(n) {
     let count = 0
