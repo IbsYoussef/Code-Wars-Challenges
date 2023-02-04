@@ -1,14 +1,14 @@
 // 6Kyu
-
-// Teamates Solution
 var countBits = function(n) {
     let count = 0
     let binary = (n >>> 0).toString(2)
-    for (i = 0; i < n.toString().length; i++) {
-        if (n[i] = "1") {
+    let binaryArray = binary.split('')
+    for (i = 0; i < binaryArray.length; i++) {
+        if (binaryArray[i] = '1') {
             count ++
         }
     }
+    console.log(binaryArray)
     console.log(count)
     return count
   
@@ -20,19 +20,15 @@ function decimalToBinary(decimal) {
 
 console.log(decimalToBinary(14))
 
-// My solution
 var countBits = function(n) {
-    let x = (n).toString(2).split('')
+    let x = (n).toString(2)
+    let nw = x.split('')
     let final = 0
 
-    for (let i = 0; i < x.length; i++){
-        final += Number(x[i])
+    for (let i = 0; i < nw.length; i++){
+        final += Number(nw[i])
     }
-
-    console.log(x)
-
     return final
-
   };
 
   console.log(countBits(1234))
