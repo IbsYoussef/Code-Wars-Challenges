@@ -1,3 +1,5 @@
+// 6Kyu
+
 // Teamate Solution worked
 function isPrime(num) {
   if (num <= 1) {
