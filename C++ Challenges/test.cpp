@@ -6,6 +6,4 @@ int main()
 
     cout << "More Configurations" << endl;
 
-    cout << "Edit" << endl;
-
 }
