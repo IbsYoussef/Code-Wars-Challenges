@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main() {
@@ -11,5 +12,5 @@ func main() {
 }
 
 func StringToArray(str string) []string {
-
+	return strings.Split(str, ",")
 }
