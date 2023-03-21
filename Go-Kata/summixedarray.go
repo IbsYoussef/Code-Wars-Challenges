@@ -17,5 +17,4 @@ func SumMix(arr []any) int {
 		}
 	}
 	return sum
-
 }
